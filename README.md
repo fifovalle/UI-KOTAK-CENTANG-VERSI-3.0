@@ -35,7 +35,7 @@ Kontribusi dan umpan balik dari komunitas sangat dihargai. Jika Anda ingin berko
 1. Clone repositori ini ke direktori web server Anda.
 
    ```
-   git clone https://github.com/fifovalle/UI-KOTAK-CENTANG-VERSI-2.0.git
+   git clone https://github.com/fifovalle/UI-KOTAK-CENTANG-VERSI-3.0.git
 
    ```
 
