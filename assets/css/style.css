@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #0f0e17;
+}
+
+.kotakGelembung .labelGelembung {
+  background: #ff8906;
+  background-position: 62px 5px;
+  background-repeat: no-repeat;
+  background-size: auto 5px;
+  border: 0;
+  border-radius: 50px;
+  box-shadow: inset 0 10px 20px rgba(0, 0, 0, 0.4),
+    0 -1px 0px rgba(0, 0, 0, 0.2), inset 0 -1px 0px #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 0;
+  height: 40px;
+  position: relative;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+  width: 90px;
+}
+
+.kotakGelembung .labelGelembung:before {
+  background-color: rgba(255, 255, 255, 0.2);
+  background-position: 0 0;
+  background-repeat: repeat;
+  background-size: 30% auto;
+  border-radius: 50%;
+  box-shadow: inset 0 -5px 25px #fffffe, 0 10px 20px rgba(0, 0, 0, 0.4);
+  content: "";
+  display: block;
+  height: 30px;
+  left: 5px;
+  position: absolute;
+  top: 6px;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+  width: 30px;
+  z-index: 2;
+}
+
+.kotakGelembung input.gelembungMasukan {
+  opacity: 0;
+  z-index: 0;
+}
+
+.kotakGelembung input.gelembungMasukan:checked + .labelGelembung {
+  background-color: #e53170;
+}
+
+.kotakGelembung input.gelembungMasukan:checked + .labelGelembung:before {
+  background-position: 150% 0;
+  box-shadow: inset 0 -5px 25px #f25f4c, 0 10px 20px rgba(0, 0, 0, 0.4);
+  left: calc(100% - 35px);
+}
